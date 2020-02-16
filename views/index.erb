@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Encodet nbt decoder</title>
+  </head>
+  <body>
+    <form action="/" method="post">
+      <div>
+        <textarea name="data" rows="10" cols="100" placeholder="Base64とGzipで圧縮さたNBTを入力してください。
+        例:'H4sIAAAAAAAAAONiYOBkYMzkYmBgYGEAAQCp5xppEQAAAA=='"><%= @data %></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Decode">
+        <a href="out_check.nbt" download="out.nbt">デコードしたnbtファイルをダウンロード</a>
+      </div>
+    </form>
+  </body>
+</html>
